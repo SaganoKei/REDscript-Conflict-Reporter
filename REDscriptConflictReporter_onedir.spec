@@ -19,6 +19,14 @@ for rel in (Path('i18n'), Path('dist') / 'i18n'):
         for json_file in p.glob('*.json'):
             datas.append((str(json_file), 'i18n'))
 
+# Include assets (templates, stylesheets, config files)
+for rel in (Path('assets'), Path('dist') / 'assets'):
+    p = base / rel
+    if p.is_dir():
+        for asset_file in p.glob('*'):
+            if asset_file.is_file():
+                datas.append((str(asset_file), 'assets'))
+
 
 a = Analysis(
     ['gui_conflict_report.py'],

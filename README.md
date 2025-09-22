@@ -1,5 +1,11 @@
 # REDscript Conflict Reporter
 
+<p align="center">
+  <img src="assets/branding/banner_dark.svg" alt="REDscript Conflict Reporter - @replaceMethod Conflict & Impact Analyzer banner" width="100%" />
+  <br/>
+  <sub><em><a href="assets/branding/banner_light.svg">Light variant</a> / Branding assets licensed under MIT (see assets/branding/LICENSE.txt)</em></sub>
+</p>
+
 > 🌐 **Language Selection** | **言語選択**
 >
 > - [🇺🇸 English](README.en.md)
@@ -71,6 +77,34 @@ For detailed documentation, please select your preferred language:
 ## License
 
 MIT License - See [LICENSE](LICENSE) file for details.
+
+---
+
+## Branding / Banner Usage
+
+The repository includes custom SVG banner assets in `assets/branding/`:
+
+| File | Purpose |
+|------|---------|
+| `banner_dark.svg` | Primary dark theme banner (README top) |
+| `banner_light.svg` | Alternate light theme variant |
+| `LICENSE.txt` | MIT license for these branding assets |
+
+### Permitted
+- Use the banners in forks, docs, mod pages, or showcase posts
+- Recolor, crop, minify (optimize) while retaining core legibility
+- Embed in external wikis with attribution (license notice retained)
+
+### Prohibited / Caution
+- Do not imply affiliation with CD PROJEKT RED
+- Do not add official Cyberpunk 2077 logos or proprietary fonts
+- Do not redistribute a modified banner that introduces trademarked material
+
+### Attribution Example
+```
+Banner adapted from REDscript Conflict Reporter (MIT Licensed)
+Not affiliated with or endorsed by CD PROJEKT RED.
+```
 
 ---
 

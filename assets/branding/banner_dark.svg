@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">REDscript Conflict Reporter - Banner (Dark)</title>
+  <desc id="desc">Neon cyber style dark banner with glitch lines and glow accents</desc>
+  <defs>
+    <linearGradient id="grad-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0f17"/>
+      <stop offset="60%" stop-color="#12141c"/>
+      <stop offset="100%" stop-color="#151a23"/>
+    </linearGradient>
+    <linearGradient id="grad-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#FF007A"/>
+      <stop offset="100%" stop-color="#F9FF3C"/>
+    </linearGradient>
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 1 1 0 0  0 1 1 0 0  0 0 0 0.55 0"/>
+    </filter>
+    <filter id="glow-mag" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0.25 0.6 0 0  0 0 0 0.55 0"/>
+    </filter>
+    <pattern id="noise" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="#10141c"/>
+      <g stroke="#1d2430" stroke-width="1" opacity="0.45">
+        <path d="M0 8h60M0 28h60M0 48h60"/>
+        <path d="M10 0v60M30 0v60M50 0v60"/>
+      </g>
+      <g stroke="#202a35" stroke-width="1" opacity="0.18">
+        <path d="M0 18h60M0 38h60"/>
+        <path d="M20 0v60M40 0v60"/>
+      </g>
+    </pattern>
+    <clipPath id="glitchClip">
+      <rect x="0" y="0" width="1200" height="320"/>
+      <rect x="120" y="40" width="180" height="14"/>
+      <rect x="118" y="160" width="220" height="10"/>
+      <rect x="600" y="110" width="200" height="12"/>
+      <rect x="860" y="220" width="160" height="10"/>
+    </clipPath>
+    <!-- Abstract decorative Redscript-style icon (original work) -->
+    <symbol id="rsIcon" viewBox="0 0 24 24">
+      <!-- Stylized circuit/script brace hybrid -->
+      <path d="M7 4 L5 6 L5 10 L7 12 L5 14 L5 18 L7 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17 4 L19 6 L19 10 L17 12 L19 14 L19 18 L17 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="12" cy="12" r="1.2" fill="currentColor"/>
+      <path d="M12 5.2 L12 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M12 21 L12 18.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M8.4 12 L4 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M20 12 L15.6 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+  <rect width="1200" height="320" fill="url(#grad-bg)"/>
+  <rect width="1200" height="320" fill="url(#noise)" opacity="0.55"/>
+  <rect x="0" y="0" width="16" height="320" fill="url(#grad-accent)"/>
+  <g filter="url(#glow-cyan)">
+    <rect x="0" y="0" width="16" height="320" fill="#00eaff" opacity="0.35"/>
+  </g>
+  <!-- Background icon motif layer -->
+  <g id="bg-icons" opacity="0.55" aria-hidden="true">
+    <!-- Cyan variants -->
+    <g fill="none" stroke="#20d7ff">
+      <use href="#rsIcon" x="1040" y="30" width="40" height="40" opacity="0.18"/>
+      <use href="#rsIcon" x="180" y="36" width="34" height="34" opacity="0.14"/>
+      <use href="#rsIcon" x="640" y="14" width="44" height="44" opacity="0.12"/>
+    </g>
+    <!-- Magenta variants -->
+    <g fill="none" stroke="#ff1e90">
+      <use href="#rsIcon" x="320" y="208" width="38" height="38" opacity="0.16"/>
+      <use href="#rsIcon" x="900" y="176" width="34" height="34" opacity="0.13"/>
+    </g>
+    <!-- Yellow variants -->
+    <g fill="none" stroke="#f7ff60">
+      <use href="#rsIcon" x="520" y="228" width="40" height="40" opacity="0.11"/>
+      <use href="#rsIcon" x="1080" y="210" width="36" height="36" opacity="0.10"/>
+    </g>
+    <!-- Mixed faint filled dots (center nodes) via duplicate overlay using currentColor fill -->
+    <g fill="#00e5ff" stroke="none" opacity="0.25">
+      <circle cx="1060" cy="50" r="2"/>
+      <circle cx="662" cy="36" r="2"/>
+      <circle cx="200" cy="56" r="2"/>
+      <circle cx="340" cy="228" r="2"/>
+      <circle cx="920" cy="196" r="2"/>
+      <circle cx="540" cy="248" r="2"/>
+      <circle cx="1098" cy="228" r="2"/>
+    </g>
+  </g>
+  <g clip-path="url(#glitchClip)">
+    <text x="160" y="150" font-family="'Segoe UI','Consolas',monospace" font-size="70" font-weight="700" letter-spacing="1" fill="#d8eaff" >REDscript Conflict Reporter</text>
+    <text x="164" y="150" font-family="'Segoe UI','Consolas',monospace" font-size="70" font-weight="700" letter-spacing="1" fill="#00E5FF" opacity="0.22">REDscript Conflict Reporter</text>
+    <text x="158" y="150" font-family="'Segoe UI','Consolas',monospace" font-size="70" font-weight="700" letter-spacing="1" fill="#FF007A" opacity="0.18">REDscript Conflict Reporter</text>
+    <text x="162" y="150" font-family="'Segoe UI','Consolas',monospace" font-size="70" font-weight="700" letter-spacing="1" fill="#F9FF3C" opacity="0.08">REDscript Conflict Reporter</text>
+  <text x="164" y="212" font-family="'Consolas','Segoe UI',monospace" font-size="30" font-weight="500" letter-spacing="2" fill="#8fb8ff" >@replaceMethod Conflict &amp; Impact Analyzer</text>
+  <text x="166" y="212" font-family="'Consolas','Segoe UI',monospace" font-size="30" font-weight="500" letter-spacing="2" fill="#00E5FF" opacity="0.30">@replaceMethod Conflict &amp; Impact Analyzer</text>
+  </g>
+  <g>
+    <path d="M118 70h420" stroke="#00E5FF" stroke-width="2" opacity="0.55"/>
+    <path d="M118 74h300" stroke="#FF007A" stroke-width="2" opacity="0.40"/>
+    <path d="M118 78h160" stroke="#F9FF3C" stroke-width="2" opacity="0.35"/>
+    <path d="M118 240h460" stroke="#00E5FF" stroke-width="2" opacity="0.5"/>
+    <path d="M118 244h120" stroke="#FF007A" stroke-width="2" opacity="0.40"/>
+  </g>
+  <g font-size="12" font-family="Consolas,monospace" fill="#5a6b82" opacity="0.85">
+    <text x="1020" y="300">Not affiliated with CD PROJEKT RED</text>
+  </g>
+</svg>
