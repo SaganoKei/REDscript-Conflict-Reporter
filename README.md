@@ -1,9 +1,9 @@
 # REDscript Conflict Reporter
 
 <p align="center">
-  <img src="assets/branding/banner_dark.svg" alt="REDscript Conflict Reporter - @replaceMethod Conflict & Impact Analyzer banner" width="100%" />
+  <img src="assets/branding/banner_light.svg" alt="REDscript Conflict Reporter - @replaceMethod Conflict & Impact Analyzer banner (Light Primary)" width="100%" />
   <br/>
-  <sub><em><a href="assets/branding/banner_light.svg">Light variant</a> / Branding assets licensed under MIT (see assets/branding/LICENSE.txt)</em></sub>
+  <sub><em><a href="assets/branding/banner_dark.svg">Dark variant</a> / Branding assets licensed under MIT (see assets/branding/LICENSE.txt)</em></sub>
 </p>
 
 > 🌐 **Language Selection** | **言語選択**
@@ -86,8 +86,8 @@ The repository includes custom SVG banner assets in `assets/branding/`:
 
 | File | Purpose |
 |------|---------|
-| `banner_dark.svg` | Primary dark theme banner (README top) |
-| `banner_light.svg` | Alternate light theme variant |
+| `banner_light.svg` | Primary light theme banner (README top) |
+| `banner_dark.svg` | Alternate dark theme variant |
 | `LICENSE.txt` | MIT license for these branding assets |
 
 ### Permitted
