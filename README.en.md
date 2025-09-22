@@ -6,6 +6,27 @@ Advanced tool for detecting and analyzing REDscript `@replaceMethod` conflicts i
 
 REDscript-Conflict-Reporter automatically detects conflicts caused by multiple MODs replacing the same methods, providing comprehensive reports with intelligent impact evaluation.
 
+## System Requirements
+
+### Executable (.exe) Version
+
+**Minimum Requirements:**
+- **OS**: Windows 10 (version 1809 or later) / Windows 11
+- **Architecture**: x64 (64-bit)
+- **Memory**: 512 MB RAM minimum, 1 GB recommended
+- **Storage**: 50 MB free disk space
+- **Display**: 1024x768 resolution minimum
+
+**Optional (for enhanced GUI experience):**
+- **WebView2 Runtime**: Microsoft Edge WebView2 Runtime for rich HTML preview
+  - Usually pre-installed on Windows 10/11
+  - Download: https://developer.microsoft.com/microsoft-edge/webview2/
+- **Internet Connection**: For downloading WebView2 Runtime (if not present)
+
+**Note**: The executable is self-contained and does not require Python installation.
+
+### Python Source Version
+
 **Key Features:**
 - 🔍 **Conflict Detection**: Precisely identifies MOD conflicts via `@replaceMethod` analysis
 - 📊 **Impact Assessment**: Heuristic analysis with severity levels (Critical/High/Medium/Low)
@@ -13,6 +34,12 @@ REDscript-Conflict-Reporter automatically detects conflicts caused by multiple M
 - 🎨 **Rich GUI**: WebView2-powered preview, real-time filters, dark/light themes
 - 🌐 **Internationalization**: Japanese/English support, extensible via `i18n/*.json` files
 - ⚙️ **Advanced Settings**: wrapMethod coexistence detection, output customization
+
+**Requirements:**
+- **Python**: 3.8 or later
+- **OS**: Windows 10/11, Linux, macOS
+- **Dependencies**: Standard library only (no external packages required)
+- **Optional**: `tkwebview2` package for enhanced WebView2 support
 
 **Tool Components:**
 - **CLI**: `redscript_conflicts_report.py` - Command-line execution for automation

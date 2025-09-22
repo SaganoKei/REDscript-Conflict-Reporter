@@ -6,6 +6,27 @@ Cyberpunk 2077 MODの REDscript `@replaceMethod` 競合を検出・分析し、�
 
 REDscript-Conflict-Reporter は、複数のMODが同じメソッドを置換することで発生する競合を自動検出し、影響度評価と共に包括的なレポートを生成します。
 
+## システム要件
+
+### 実行ファイル（.exe）版
+
+**最小要件：**
+- **OS**: Windows 10 (バージョン1809以降) / Windows 11
+- **アーキテクチャ**: x64 (64bit)
+- **メモリ**: 512 MB RAM最小、1 GB推奨
+- **ストレージ**: 50 MB以上の空き容量
+- **ディスプレイ**: 1024x768解像度以上
+
+**オプション（GUIエクスペリエンス向上）：**
+- **WebView2 Runtime**: Microsoft Edge WebView2 Runtime（リッチHTMLプレビュー用）
+  - Windows 10/11には通常プリインストール済み
+  - ダウンロード: https://developer.microsoft.com/microsoft-edge/webview2/
+- **インターネット接続**: WebView2 Runtimeダウンロード用（未インストールの場合）
+
+**注意**: 実行ファイルは自己完結型で、Pythonのインストールは不要です。
+
+### Pythonソース版
+
 - **Python**: 3.8以上
 - **OS**: Windows 10/11（WebView2対応）、Linux、macOS
 - **必須パッケージ**: 標準ライブラリのみ

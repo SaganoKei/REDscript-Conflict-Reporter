@@ -35,6 +35,32 @@ python redscript_conflicts_report.py --mode reference
 - 🎨 **Rich GUI**: WebView2-powered preview, real-time filters, dark/light themes
 - 🌐 **Internationalization**: Japanese/English support, extensible via `i18n/*.json` files
 
+## System Requirements
+
+### For Executable (.exe) Version
+
+**Minimum Requirements:**
+- **OS**: Windows 10 (version 1809 or later) / Windows 11
+- **Architecture**: x64 (64-bit)
+- **Memory**: 512 MB RAM minimum, 1 GB recommended
+- **Storage**: 50 MB free disk space
+- **Display**: 1024x768 resolution minimum
+
+**Optional (for enhanced GUI experience):**
+- **WebView2 Runtime**: Microsoft Edge WebView2 Runtime for rich HTML preview
+  - Usually pre-installed on Windows 10/11
+  - Download: https://developer.microsoft.com/microsoft-edge/webview2/
+- **Internet Connection**: For downloading WebView2 Runtime (if not present)
+
+**Note**: The executable is self-contained and does not require Python installation.
+
+### For Python Source Version
+
+- **Python**: 3.8 or later
+- **OS**: Windows 10/11, Linux, macOS
+- **Dependencies**: Standard library only (no external packages required)
+- **Optional**: `tkwebview2` package for enhanced WebView2 support
+
 ## Documentation
 
 For detailed documentation, please select your preferred language:
