@@ -340,18 +340,6 @@ def main():
     # Initial plain English description, replaced after language loading if needed
     ap = argparse.ArgumentParser(description='Scan redscript annotations and report conflicts')
     ap.add_argument('--root', default=str(Path('r6/scripts').resolve()), help='Root directory to scan (default: r6/scripts)')
-    # Language selection: single --lang <code> (codes derived from i18n/*.json)
-    i18n_dir = Path(__file__).parent / 'i18n'
-    available_langs = sorted([p.stem for p in i18n_dir.glob('*.json')])
-    ap.add_argument('--lang', choices=available_langs, help='Language code to use (default: en or first available)')
-    # Output selection flags: if none specified, all are enabled
-    ap.add_argument('--json', action='store_true', help='Write JSON report')
-    ap.add_argument('--md', action='store_true', help='Write Markdown report')
-    ap.add_argument('--html', action='store_true', help='Write HTML report')
-    # Output paths (filenames aligned with GUI defaults)
-    ap.add_argument('--out-json', default='reports/redscript_conflicts.json', help='Path to write JSON report')
-    ap.add_argument('--out-md', default='reports/redscript_conflicts.md', help='Path to write Markdown report')
-    ap.add_argument('--out-html', default='reports/redscript_conflicts.html', help='Path to write HTML report')
 
     # Mode selection: conflicts vs reference
     ap.add_argument('--mode', choices=['conflicts', 'reference'], default='conflicts',
@@ -360,6 +348,20 @@ def main():
     # wrapMethod coexistence selection
     ap.add_argument('--wrap', choices=['include', 'exclude'], default='exclude',
                     help='wrapMethod coexistence handling: include or exclude (default)')
+
+    # Language selection: single --lang <code> (codes derived from i18n/*.json)
+    i18n_dir = Path(__file__).parent / 'i18n'
+    available_langs = sorted([p.stem for p in i18n_dir.glob('*.json')])
+    ap.add_argument('--lang', choices=available_langs, help='Language code to use (default: en or first available)')
+
+    # Output selection flags: if none specified, all are enabled
+    ap.add_argument('--json', action='store_true', help='Write JSON report')
+    ap.add_argument('--md', action='store_true', help='Write Markdown report')
+    ap.add_argument('--html', action='store_true', help='Write HTML report')
+    # Output paths (filenames aligned with GUI defaults)
+    ap.add_argument('--out-json', default='reports/redscript_conflicts.json', help='Path to write JSON report')
+    ap.add_argument('--out-md', default='reports/redscript_conflicts.md', help='Path to write Markdown report')
+    ap.add_argument('--out-html', default='reports/redscript_conflicts.html', help='Path to write HTML report')
 
     args = ap.parse_args()
 
