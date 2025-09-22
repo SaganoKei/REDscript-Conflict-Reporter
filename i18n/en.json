@@ -1,0 +1,177 @@
+{
+  "$meta": {
+    "lang": "en",
+    "name": "English",
+    "updated": "2025-09-18T2",
+    "preferredFonts": ["Noto Sans"]
+  },
+
+  "app.title": "REDscript Conflict Reporter",
+
+  "error.import.title": "Import Error",
+  "error.import.body": "Failed to import core scanner module (redscript_conflicts_report).",
+  "error.generating": "Error generating report",
+
+  "ui.engine": "Engine",
+  "ui.engine.webview2": "WebView2",
+  "ui.engine.text": "Text",
+  "ui.theme": "Theme",
+  "ui.lang": "Lang",
+  "ui.conflicts": "Conflicts",
+
+  "theme.light": "Light",
+  "theme.dark": "Dark",
+  "theme.label": "Theme",
+
+  "mode.conflicts": "Conflicts only",
+  "mode.reference": "Include reference",
+  "mode.label": "Mode",
+
+  "scan.settings": "Scan settings",
+  "scan.root": "Root (r6/scripts)",
+  "scan.browse": "Browse...",
+  "scan.outJson": "Output JSON file",
+  "scan.outMd": "Output Markdown file",
+  "scan.outHtml": "Output HTML file",
+  "scan.saveAs": "Save as...",
+
+  "options.title": "Options",
+  "options.files": "Output files",
+  "options.fileHtml": "Preview (HTML)",
+  "options.fileMd": "Markdown (.md)",
+  "options.fileJson": "JSON (.json)",
+  "options.autoOpen": "Open folder after output",
+  "options.localizeOutput": "Localize labels inside outputs",
+  "options.includeWrap": "Show wrapMethod coexistence list",
+
+  "actions.generate": "Generate report",
+  "actions.openFolder": "Open folder",
+  "actions.openBrowser": "Open in browser",
+
+  "preview.options": "Preview options",
+  "preview.fontScale": "Font scale",
+
+  "filters.title": "Preview filters",
+  "filters.mods": "Mods (comma separated)",
+  "filters.class": "Class substring",
+  "filters.severity": "Severity",
+  "filters.sev.critical": "Critical",
+  "filters.sev.high": "High",
+  "filters.sev.medium": "Medium",
+  "filters.sev.low": "Low",
+  "filters.symptoms.order": [
+    "uiHud",
+    "player",
+    "vehicle",
+    "quest",
+    "inventory",
+    "damage",
+    "other"
+  ],
+  "filters.symptoms.all": "All",
+  "filters.symptoms.none": "None",
+
+  "tabs.markdown": "Markdown",
+  "tabs.html": "HTML",
+  "tabs.json": "JSON",
+  "tabs.log": "Log",
+
+  "dialog.error.title": "Error",
+  "dialog.info.title": "Info",
+  "dialog.noPreview": "No preview available yet. Generate a report first.",
+  "dialog.cannotRun.title": "Cannot run",
+  "dialog.cannotRun.body": "Missing or invalid configuration to run scanner.",
+  "dialog.inputCheck.title": "Input check",
+  "dialog.close": "Close",
+
+  "toast.done": "Report generation completed",
+  "toast.htmlCopied": "HTML copied",
+
+  "report.header": "REDscript Conflicts Report",
+  "report.scannedRoot": "Scanned root:",
+  "report.filesScanned": "Files scanned:",
+  "report.conflicts": "Conflicts (potential overlaps)",
+  "report.noConflicts": "No conflicts detected",
+  "report.reference": "Reference (non-conflicting entries)",
+  "report.targetMethod": "Target method",
+  "report.wrapCoexist": "wrapMethod Coexistence (@wrapMethod by multiple files)",
+  "report.replaceWrapCoexist": "Replace + wrapMethod Coexistence (same target)",
+
+  "impact.label": "Impact (Overall)",
+  "impact.label.baseline": "Impact (Baseline)",
+  "impact.extra.wrapCoexist": "(wrapMethod coexistence detected)",
+  "impact.wrapHiddenTooltip": "wrapMethod coexistence exists for this method (wrap section hidden)",
+  "impact.symptom.uiHud": "UI / HUD instability",
+  "impact.symptom.player": "Player ability or stats issues",
+  "impact.symptom.vehicle": "Vehicle handling or behavior",
+  "impact.symptom.quest": "Quest or scripted progression risk",
+  "impact.symptom.inventory": "Inventory / item anomalies",
+  "impact.symptom.damage": "Damage / combat calculation variance",
+  "impact.symptom.other": "General instability",
+
+  "conflict.wrapInlineHeading": "@wrapMethod (coexisting)",
+
+  "legend.title": "Legend / Severity",
+  "legend.body": "Critical: very high probability of breaking core systems. High: likely to cause noticeable issues. Medium: may cause limited or situational problems. Low: minor or cosmetic risk.",
+  "legend.lines": [
+    "Critical: very high probability of breaking core systems",
+    "High: likely to cause noticeable issues",
+    "Medium: situational or limited impact",
+    "Low: minor / cosmetic risk"
+  ],
+
+  "summary.total": "Total",
+
+  "about.title": "About / Diagnostics",
+  "about.close": "Close",
+  "about.menu": "About / Diagnostics",
+  "about.filters": "Filters",
+
+  "webview2.diagnostics.menu": "WebView2 Diagnostics",
+  "webview2.diagnostics.title": "WebView2 Diagnostics",
+  "webview2.diagnostics.header": "== WebView2 Diagnostics ==",
+
+  "ctx.copyHtml": "Copy HTML",
+  "ctx.openExternal": "Open in external browser",
+  "ctx.webview2Info": "WebView2 Runtime info",
+
+  "menu.display": "Display settings",
+  "menu.display.language": "Language",
+  "menu.display.systemDefault": "System default",
+  "menu.display.fontScale": "Font scale",
+  "menu.display.fontFamily": "Font",
+  "menu.display.fontRecent": "Recent",
+  "menu.display.fontMore": "Open font chooser...",
+  "menu.output": "Output settings",
+  "menu.output.openWindow": "Open Output settings...",
+
+  "status.font": "font",
+  "status.mods": "mods",
+  "status.class": "class",
+  "status.sev": "sev",
+
+  "fontChooser.title": "Font chooser",
+  "fontChooser.search": "Search",
+  "fontChooser.category": "Category",
+  "fontChooser.categories.all": "All",
+  "fontChooser.categories.sans": "Sans",
+  "fontChooser.categories.serif": "Serif",
+  "fontChooser.categories.mono": "Monospace",
+  "fontChooser.categories.cjk": "CJK",
+  "fontChooser.categories.other": "Other",
+  "fontChooser.apply": "Apply",
+  "fontChooser.close": "Close",
+  "fontChooser.previewSample": "The quick brown fox 123 ABC",
+  "fontChooser.current": "Current font:",
+  "fontChooser.ok": "OK",
+
+  "output.settings": "Output Settings",
+  "output.destDir": "Output destination directory",
+
+  "settings.file": "Settings file",
+
+  "outwin.statusTitle": "Current status",
+  "outwin.status.localize": "Localize",
+  "outwin.status.autoOpen": "Auto-open",
+  "outwin.status.includeWrap": "wrapMethod"
+}

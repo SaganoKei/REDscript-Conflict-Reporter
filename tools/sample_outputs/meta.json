@@ -1,0 +1,8 @@
+{
+  "generated": "2025-09-22T01:19:28.308807Z",
+  "files": [
+    "inline_wrap_enabled.html",
+    "inline_wrap_disabled.html"
+  ],
+  "note": "Both files should show an inline wrap list under PlayerPuppet.OnUpdate."
+}

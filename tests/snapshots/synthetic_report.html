@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>report.header</title>
+    <style>
+:root {
+    --base: 15px;
+    --scale: 1
+}
+
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    font-size: calc(var(--base)*var(--scale));
+    margin: 0;
+    background: #ffffff;
+    color: #000000
+}
+
+.dark body {
+    background: #1e1e1e;
+    color: #e6e6e6
+}
+
+.container {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 0 12px
+}
+
+h1,
+h2,
+h3 {
+    margin: 10px 0
+}
+
+h1 {
+    font-size: 1.6em
+}
+
+h2 {
+    font-size: 1.3em
+}
+
+h3 {
+    font-size: 1.1em
+}
+
+.meta {
+    opacity: .85
+}
+
+.conflict {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12)
+}
+
+.dark .conflict {
+    border-color: #3c3c3c;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6)
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: .9em;
+    background: #e6e6e6;
+    color: #333;
+    margin-right: 6px
+}
+
+.dark .badge {
+    background: #3a3d41;
+    color: #fff
+}
+
+code,
+pre {
+    background: #f6f6f6;
+    color: #333;
+    padding: 2px 4px;
+    border-radius: 4px
+}
+
+.dark code,
+.dark pre {
+    background: #2d2d30;
+    color: #e6e6e6
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none
+}
+
+.dark a {
+    color: #4ea3ff
+}
+
+ul {
+    margin: 6px 0 10px 20px
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8px 0
+}
+
+th,
+td {
+    border: 1px solid #dcdcdc;
+    padding: 6px;
+    text-align: left
+}
+
+th {
+    background: #f0f0f0;
+    color: #333
+}
+
+.dark th {
+    background: #2d2d30;
+    color: #e6e6e6
+}
+
+.impact {
+    margin-top: 8px;
+    padding: 8px;
+    border-left: 3px solid #ff8800;
+    border-radius: 4px
+}
+
+.dark .impact {
+    border-left-color: #cc5a00
+}
+
+.legend {
+    border: 1px dashed #cccccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0
+}
+
+.dark .legend {
+    border-color: #3c3c3c
+}
+
+.sev-critical {
+    background: #b00020;
+    color: #fff
+}
+
+.sev-high {
+    background: #a40000;
+    color: #fff
+}
+
+.sev-medium {
+    background: #cc8800;
+    color: #fff
+}
+
+.sev-low {
+    background: #4a7a1f;
+    color: #fff
+}
+
+.toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #dcdcdc;
+    background: #ffffff
+}
+
+.dark .toolbar {
+    border-bottom-color: #3c3c3c;
+    background: #1e1e1e
+}
+
+.toolbar .sp {
+    flex: 1
+}
+
+.btn {
+    padding: 4px 8px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background: #f8f8f8;
+    color: #333;
+    cursor: pointer
+}
+
+.dark .btn {
+    border-color: #3c3c3c;
+    background: #2a2a2a;
+    color: #e6e6e6
+}
+
+.btn:hover {
+    filter: brightness(1.05)
+}
+
+.file {
+    font-family: Consolas, monospace
+}
+</style>
+    <script>
+        (function () {
+            function clamp(v) { return Math.max(0.6, Math.min(1.6, v)); }
+            function getScale() { var s = getComputedStyle(document.documentElement).getPropertyValue('--scale'); return parseFloat(s) || 1; }
+            window.__scaleDec = function () { document.documentElement.style.setProperty('--scale', clamp(getScale() - 0.1)); };
+            window.__scaleReset = function () { document.documentElement.style.setProperty('--scale', 1); };
+            window.__scaleInc = function () { document.documentElement.style.setProperty('--scale', clamp(getScale() + 0.1)); };
+        })();
+    </script>
+</head>
+
+<body class="">
+    <div class="toolbar">
+        <div><b>report.header</b></div>
+        <div class="sp"></div>
+        <button class="btn" onclick="__scaleDec()" title="Smaller">A−</button>
+        <button class="btn" onclick="__scaleReset()" title="Reset">A</button>
+        <button class="btn" onclick="__scaleInc()" title="Larger">A+</button>
+    </div>
+    <div class="container">
+        <div class='meta'>report.scannedRoot <code>X:/game/mods</code> | report.filesScanned 5</div>
+<div class='meta'><span class='badge'>replaceGlobal: 0</span> <span class='badge'>replaceMethod: 3</span> <span class='badge'>wrapMethod: 1</span></div>
+<div class='legend'><b>legend.title</b><br>Critical: very high probability of breaking core systems<br>High: likely to cause noticeable issues<br>Medium: situational or limited impact<br>Low: minor / cosmetic risk</div>
+<h2>report.conflicts <span class='badge'>summary.total: 2</span></h2>
+<table><thead><tr><th>#</th><th>Class.Method</th><th>Mods</th><th>Count</th><th>filters.severity</th></tr></thead><tbody>
+<tr><td>1</td><td><a href='#conf-1-playerpuppet-onupdate'>PlayerPuppet.OnUpdate</a></td><td>2</td><td>2</td><td><span class='badge sev-medium'>Medium</span></td></tr>
+<tr><td>2</td><td><a href='#conf-2-hudmanager-refreshui'>HudManager.RefreshUI</a></td><td>1</td><td>1</td><td><span class='badge sev-low'>Low</span></td></tr>
+</tbody></table>
+<div class='conflict' id='conf-playerpuppet-onupdate'>
+<h3>PlayerPuppet.OnUpdate</h3>
+<div><b>Mods:</b> ModA, ModB </div>
+<div class='impact'><b>impact.label</b> <span class='badge sev-medium'>Medium</span> — impact.symptom.player impact.extra.wrapCoexist</div>
+<div><b>report.targetMethod:</b> <code>func OnUpdate(delta: Float) -> Void</code></div>
+<ul>
+<li>[ModA] <a class='file' href='file:///X:/game/mods/a.reds'>a.reds</a>:10</li>
+<li>[ModB] <a class='file' href='file:///X:/game/mods/b.reds'>b.reds</a>:20</li>
+</ul>
+<div class='wrap-inline'><b>Other mods @wrapMethod (coexisting)</b></div>
+<ul class='wrap-occurrences'>
+<li>[ModA] <a class='file' href='file:///X:/game/mods/a.reds'>a.reds</a>:10</li>
+<li>[ModB] <a class='file' href='file:///X:/game/mods/b.reds'>b.reds</a>:20</li>
+</ul>
+</div>
+<div class='conflict' id='conf-hudmanager-refreshui'>
+<h3>HudManager.RefreshUI</h3>
+<div><b>Mods:</b> ModC </div>
+<div class='impact'><b>impact.label</b> <span class='badge sev-low'>Low</span> — impact.symptom.uiHud</div>
+<div><b>report.targetMethod:</b> <code>func RefreshUI() -> Void</code></div>
+<ul>
+<li>[ModC] <a class='file' href='file:///X:/game/mods/c.reds'>c.reds</a>:5</li>
+</ul>
+</div>
+<h2>report.wrapCoexist</h2>
+<table><thead><tr><th>#</th><th>Class.Method</th><th>Mods</th><th>Wrap Count</th></tr></thead><tbody>
+<tr><td>1</td><td>PlayerPuppet.OnUpdate</td><td>2</td><td>2</td></tr>
+</tbody></table>
+<h3>PlayerPuppet.OnUpdate</h3>
+<ul>
+<li>[ModA] <a class='file' href='file:///X:/game/mods/a.reds'>a.reds</a>:10</li>
+<li>[ModB] <a class='file' href='file:///X:/game/mods/b.reds'>b.reds</a>:20</li>
+</ul>
+<h2>report.reference</h2>
+<div class='conflict'><h3>HudManager.RefreshUI</h3>
+<div><b>report.targetMethod:</b> <code>func RefreshUI() -> Void</code></div>
+<ul>
+<li>[ModC] <a class='file' href='file:///X:/game/mods/c.reds'>c.reds</a>:5</li>
+</ul></div>
+<div class='conflict'><h3>PlayerPuppet.OnUpdate</h3>
+<div><b>report.targetMethod:</b> <code>func OnUpdate(delta: Float) -> Void</code></div>
+<ul>
+<li>[ModA] <a class='file' href='file:///X:/game/mods/a.reds'>a.reds</a>:10</li>
+<li>[ModB] <a class='file' href='file:///X:/game/mods/b.reds'>b.reds</a>:20</li>
+</ul></div>
+    </div>
+</body>
+
+</html>

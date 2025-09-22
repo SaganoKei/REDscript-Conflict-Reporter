@@ -1,0 +1,177 @@
+{
+  "$meta": {
+    "lang": "ja",
+    "name": "日本語",
+    "updated": "2025-09-18T2",
+    "preferredFonts": ["Noto Sans CJK JP", "Noto Sans"]
+  },
+
+  "app.title": "REDscript コンフリクトレポーター",
+
+  "error.import.title": "読み込みエラー",
+  "error.import.body": "コアスキャナーモジュールのインポートに失敗しました (redscript_conflicts_report)。",
+  "error.generating": "レポート生成エラー",
+
+  "ui.engine": "エンジン",
+  "ui.engine.webview2": "WebView2",
+  "ui.engine.text": "テキスト",
+  "ui.theme": "テーマ",
+  "ui.lang": "言語",
+  "ui.conflicts": "コンフリクト",
+
+  "theme.light": "ライト",
+  "theme.dark": "ダーク",
+  "theme.label": "テーマ",
+
+  "mode.conflicts": "コンフリクトのみ",
+  "mode.reference": "参照を含める",
+  "mode.label": "モード",
+
+  "scan.settings": "スキャン設定",
+  "scan.root": "ルート (r6/scripts)",
+  "scan.browse": "参照...",
+  "scan.outJson": "出力 JSON ファイル",
+  "scan.outMd": "出力 Markdown ファイル",
+  "scan.outHtml": "出力 HTML ファイル",
+  "scan.saveAs": "名前を付けて保存...",
+
+  "options.title": "オプション",
+  "options.files": "出力ファイル",
+  "options.fileHtml": "プレビュー (HTML)",
+  "options.fileMd": "Markdown (.md)",
+  "options.fileJson": "JSON (.json)",
+  "options.autoOpen": "出力後にフォルダを開く",
+  "options.localizeOutput": "出力内ラベルを翻訳",
+  "options.includeWrap": "wrapMethod 共存一覧を表示",
+
+  "actions.generate": "レポート生成",
+  "actions.openFolder": "フォルダを開く",
+  "actions.openBrowser": "ブラウザで開く",
+
+  "preview.options": "プレビュー設定",
+  "preview.fontScale": "フォント倍率",
+
+  "filters.title": "プレビューフィルタ",
+  "filters.mods": "Mod (カンマ区切り)",
+  "filters.class": "クラス部分一致",
+  "filters.severity": "重要度",
+  "filters.sev.critical": "クリティカル",
+  "filters.sev.high": "高",
+  "filters.sev.medium": "中",
+  "filters.sev.low": "低",
+  "filters.symptoms.order": [
+    "uiHud",
+    "player",
+    "vehicle",
+    "quest",
+    "inventory",
+    "damage",
+    "other"
+  ],
+  "filters.symptoms.all": "全て",
+  "filters.symptoms.none": "全解除",
+
+  "tabs.markdown": "Markdown",
+  "tabs.html": "HTML",
+  "tabs.json": "JSON",
+  "tabs.log": "ログ",
+
+  "dialog.error.title": "エラー",
+  "dialog.info.title": "情報",
+  "dialog.noPreview": "まだプレビューはありません。先にレポートを生成してください。",
+  "dialog.cannotRun.title": "実行不可",
+  "dialog.cannotRun.body": "スキャナー実行に必要な設定が不足または無効です。",
+  "dialog.inputCheck.title": "入力チェック",
+  "dialog.close": "閉じる",
+
+  "toast.done": "レポート生成が完了しました",
+  "toast.htmlCopied": "HTML をコピーしました",
+
+  "report.header": "REDscript コンフリクトレポート",
+  "report.scannedRoot": "スキャン対象ルート:",
+  "report.filesScanned": "スキャンしたファイル数:",
+  "report.conflicts": "コンフリクト (重複の可能性)",
+  "report.noConflicts": "コンフリクトは検出されませんでした",
+  "report.reference": "参照 (非コンフリクト項目)",
+  "report.targetMethod": "対象メソッド",
+  "report.wrapCoexist": "wrapMethod 共存 (@wrapMethod が複数ファイル)",
+  "report.replaceWrapCoexist": "Replace + wrapMethod 共存 (同一対象)",
+
+  "impact.label": "影響度（総合）",
+  "impact.label.baseline": "影響度（基準）",
+  "impact.extra.wrapCoexist": "(wrapMethod 共存を検出)",
+  "impact.wrapHiddenTooltip": "このメソッドには wrapMethod 共存があります (wrap セクション非表示)",
+  "impact.symptom.uiHud": "UI / HUD 不安定",
+  "impact.symptom.player": "プレイヤー能力 / ステータス異常",
+  "impact.symptom.vehicle": "乗り物挙動の問題",
+  "impact.symptom.quest": "クエスト進行リスク",
+  "impact.symptom.inventory": "インベントリ / アイテム異常",
+  "impact.symptom.damage": "ダメージ / 戦闘計算のばらつき",
+  "impact.symptom.other": "一般的不安定",
+
+  "conflict.wrapInlineHeading": "@wrapMethod (共存)",
+
+  "legend.title": "凡例 / 重要度",
+  "legend.body": "クリティカル: 高確率のコアシステム破損。高: 目立つ不具合が起きやすい。中: 限定的 / 条件付き問題の可能性。低: 軽微または外観レベルのリスク。",
+  "legend.lines": [
+    "クリティカル: 高確率のコアシステム破損",
+    "高: 目立つ不具合が起きやすい",
+    "中: 条件付きで問題が発生する可能性",
+    "低: 軽微 / 外観レベルのリスク"
+  ],
+
+  "summary.total": "合計",
+
+  "about.title": "バージョン / 診断",
+  "about.close": "閉じる",
+  "about.menu": "バージョン / 診断",
+  "about.filters": "フィルタ",
+
+  "webview2.diagnostics.menu": "WebView2 診断",
+  "webview2.diagnostics.title": "WebView2 診断",
+  "webview2.diagnostics.header": "== WebView2 診断 ==",
+
+  "ctx.copyHtml": "HTML をコピー",
+  "ctx.openExternal": "外部ブラウザで開く",
+  "ctx.webview2Info": "WebView2 ランタイム情報",
+
+  "menu.display": "表示設定",
+  "menu.display.language": "言語",
+  "menu.display.systemDefault": "システム既定",
+  "menu.display.fontScale": "フォント倍率",
+  "menu.display.fontFamily": "フォント",
+  "menu.display.fontRecent": "最近使用",
+  "menu.display.fontMore": "フォント選択ウィンドウを開く...",
+  "menu.output": "出力設定",
+  "menu.output.openWindow": "出力設定ウィンドウを開く...",
+
+  "status.font": "フォント",
+  "status.mods": "mods",
+  "status.class": "クラス",
+  "status.sev": "重要度",
+
+  "fontChooser.title": "フォント選択",
+  "fontChooser.search": "検索",
+  "fontChooser.category": "カテゴリ",
+  "fontChooser.categories.all": "全て",
+  "fontChooser.categories.sans": "Sans",
+  "fontChooser.categories.serif": "Serif",
+  "fontChooser.categories.mono": "等幅",
+  "fontChooser.categories.cjk": "CJK",
+  "fontChooser.categories.other": "その他",
+  "fontChooser.apply": "適用",
+  "fontChooser.close": "閉じる",
+  "fontChooser.previewSample": "The quick brown fox 123 あいう漢字 ABC",
+  "fontChooser.current": "現在のフォント:",
+  "fontChooser.ok": "OK",
+
+  "output.settings": "出力設定",
+  "output.destDir": "出力先ディレクトリ",
+
+  "settings.file": "設定ファイル",
+
+  "outwin.statusTitle": "現在の有効化状況",
+  "outwin.status.localize": "翻訳",
+  "outwin.status.autoOpen": "自動オープン",
+  "outwin.status.includeWrap": "wrapMethod"
+}

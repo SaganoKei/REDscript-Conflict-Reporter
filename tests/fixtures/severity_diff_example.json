@@ -1,0 +1,31 @@
+{
+  "scanned_root": "sample_mods/diff_example",
+  "files_scanned": 5,
+  "conflicts": [
+    {
+      "class": "FooClass",
+      "method": "OnUpdate",
+      "count": 4,
+      "mods": ["ModA","ModB","ModC","ModD"],
+      "occurrences": [
+        {"mod":"ModA","relpath":"ModA_OnUpdate.reds","line":3,"func_sig":"public func OnUpdate(delta: Float) -> Int32"},
+        {"mod":"ModB","relpath":"ModB_OnUpdate.reds","line":3,"func_sig":"public func OnUpdate(delta: Float) -> Int32"},
+        {"mod":"ModC","relpath":"ModC_OnUpdate.reds","line":3,"func_sig":"public func OnUpdate(delta: Float) -> Int32"},
+        {"mod":"ModD","relpath":"ModD_OnUpdate.reds","line":3,"func_sig":"public func OnUpdate(delta: Float) -> Int32"}
+      ]
+    }
+  ],
+  "wrap_coexistence": [
+    {
+      "class": "FooClass",
+      "method": "OnUpdate",
+      "mods": ["ModE"],
+      "wrap_count": 1,
+      "occurrences": [
+        {"mod":"ModE","relpath":"WrapE_OnUpdate.reds","line":2}
+      ]
+    }
+  ],
+  "annotation_counts": {"replaceMethod":4, "wrapMethod":1, "replaceGlobal":0},
+  "_options": {"include_wrap_coexistence": true}
+}

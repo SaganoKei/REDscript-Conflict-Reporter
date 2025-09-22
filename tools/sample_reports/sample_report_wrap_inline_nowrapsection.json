@@ -1,0 +1,66 @@
+{
+  "root": "X:/game/mods",
+  "entries": [
+    {
+      "annotation": "replaceMethod",
+      "class": "PlayerPuppet",
+      "method": "OnUpdate",
+      "relpath": "a.reds",
+      "line": 10,
+      "mod": "ModA",
+      "func_sig": "func OnUpdate(delta: Float) -> Void"
+    },
+    {
+      "annotation": "replaceMethod",
+      "class": "PlayerPuppet",
+      "method": "OnUpdate",
+      "relpath": "b.reds",
+      "line": 20,
+      "mod": "ModB",
+      "func_sig": "func OnUpdate(delta: Float) -> Void"
+    },
+    {
+      "annotation": "replaceMethod",
+      "class": "HudManager",
+      "method": "RefreshUI",
+      "relpath": "c.reds",
+      "line": 5,
+      "mod": "ModC",
+      "func_sig": "func RefreshUI() -> Void"
+    }
+  ],
+  "wrap_coexistence": [
+    {
+      "class": "PlayerPuppet",
+      "method": "OnUpdate",
+      "mods": ["ModA", "ModB"],
+      "wrap_count": 2,
+      "occurrences": [
+        { "mod": "ModA", "relpath": "a.reds", "line": 10 },
+        { "mod": "ModB", "relpath": "b.reds", "line": 20 }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "class": "PlayerPuppet",
+      "method": "OnUpdate",
+      "mods": ["ModA", "ModB"],
+      "count": 2,
+      "occurrences": [
+        { "mod": "ModA", "relpath": "a.reds", "line": 10, "func_sig": "func OnUpdate(delta: Float) -> Void" },
+        { "mod": "ModB", "relpath": "b.reds", "line": 20, "func_sig": "func OnUpdate(delta: Float) -> Void" }
+      ]
+    },
+    {
+      "class": "HudManager",
+      "method": "RefreshUI",
+      "mods": ["ModC"],
+      "count": 1,
+      "occurrences": [
+        { "mod": "ModC", "relpath": "c.reds", "line": 5, "func_sig": "func RefreshUI() -> Void" }
+      ]
+    }
+  ],
+  "_options": { "include_wrap_coexistence": false }
+}

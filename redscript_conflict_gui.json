@@ -1,0 +1,32 @@
+{
+  "lang": "ja",
+  "dark_mode": false,
+  "win_width": 720,
+  "win_height": 780,
+  "root": "D:\\SteamLibrary\\steamapps\\common\\Cyberpunk 2077",
+  "out_html": "C:\\Users\\Admin\\OneDrive\\Documents\\My Games\\Cyberpunk 2077\\Repositories\\REDscript-Conflict-Reporter\\reports\\redscript_conflicts.html",
+  "out_md": "C:\\Users\\Admin\\OneDrive\\Documents\\My Games\\Cyberpunk 2077\\Repositories\\REDscript-Conflict-Reporter\\reports\\redscript_conflicts.md",
+  "out_json": "C:\\Users\\Admin\\OneDrive\\Documents\\My Games\\Cyberpunk 2077\\Repositories\\REDscript-Conflict-Reporter\\reports\\redscript_conflicts.json",
+  "mode_conflicts": true,
+  "enable_preview": false,
+  "enable_md": false,
+  "enable_json": false,
+  "auto_open": false,
+  "localize_output": true,
+  "include_wrap": false,
+  "font_scale": 1.0,
+  "font_family": "Noto Sans JP",
+  "font_mru": [
+    "Noto Sans JP"
+  ],
+  "filter_mods": "",
+  "filter_class": "",
+  "sev_critical": true,
+  "sev_high": true,
+  "sev_medium": true,
+  "sev_low": true,
+  "retain_temp_files": false,
+  "temp_max_days": 5,
+  "temp_max_total_mb": 300,
+  "settings_path": "C:\\Users\\Admin\\OneDrive\\Documents\\My Games\\Cyberpunk 2077\\Repositories\\REDscript-Conflict-Reporter\\redscript_conflict_gui.json"
+}

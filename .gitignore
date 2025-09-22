@@ -1,0 +1,12 @@
+﻿__pycache__/
+build/
+*.pyc
+# Generated reports
+reports/
+# Large or derived docs
+REDmod-docs.pdf
+# Common local stuff
+.venv/
+dist/
+.vscode/
+.idea/

@@ -1,0 +1,36 @@
+{
+  "$meta": {
+    "description": "Default impact scoring profile (externalized). Matches common_impact._IMPACT_DEFAULT_CONFIG."
+  },
+  "thresholds": {
+    "critical": 95,
+    "high": 70,
+    "medium": 45
+  },
+  "weights": {
+    "per_mod": 10,
+    "class_keywords": {
+      "vehicle": 15,
+      "quest": 12,
+      "player": 12,
+      "inventory": 10,
+      "damage": 10,
+      "ui": 8,
+      "hud": 8,
+      "ink": 6
+    },
+    "method_keywords": {
+      "update": 12,
+      "tick": 12,
+      "initialize": 10,
+      "init": 10,
+      "onattach": 8,
+      "onunattach": 6,
+      "refresh": 8,
+      "calculate": 8,
+      "resolve": 8
+    },
+    "signature": {"per_arg": 3, "has_return": 6},
+    "wrap_coexist_bonus": 12
+  }
+}
