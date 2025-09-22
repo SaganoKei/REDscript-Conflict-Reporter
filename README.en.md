@@ -131,16 +131,16 @@ python redscript_conflicts_report.py [options]
 
 **Key Options:**
 
-| Option                               | Description                                                                   | Default                                   |
-|--------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------|
-| `--root <path>`                      | Scan root path                                                                | Auto-detect `r6/scripts`                 |
-| `--mode <conflicts&#124;reference>` | Output mode: `conflicts` (conflicts only) or `reference` (include reference list) | `conflicts`                               |
-| `--wrap <include&#124;exclude>`     | wrapMethod coexistence: `include` or `exclude`                               | `exclude`                                 |
-| `--lang <code>`                      | Language code (`en`, `ja`, etc.)                                             | `en` or first available                  |
-| `--json` `--md` `--html`             | Output format selection                                                       | All formats                               |
-| `--out-json <file>`                  | JSON output path                                                              | `reports/redscript_conflicts.json`       |
-| `--out-md <file>`                    | Markdown output path                                                          | `reports/redscript_conflicts.md`         |
-| `--out-html <file>`                  | HTML output path                                                              | `reports/redscript_conflicts.html`       |
+| Option                               | Description                                                                       | Default                                     |
+|--------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------|
+| `--root <path>`                      | Scan root path                                                                    | Auto-detect `r6/scripts`                   |
+| `--mode <conflicts&#124;reference>` | Output mode: `conflicts` (conflicts only) or `reference` (include reference list) | `conflicts`                                 |
+| `--wrap <include&#124;exclude>`     | wrapMethod coexistence: `include` or `exclude`                                   | `exclude`                                   |
+| `--lang <code>`                      | Language code (`en`, `ja`, etc.)                                                 | `en` or first available                     |
+| `--json` `--md` `--html`             | Output format selection                                                           | All formats                                 |
+| `--out-json <file>`                  | JSON output path                                                                  | `reports/redscript_conflicts.json`         |
+| `--out-md <file>`                    | Markdown output path                                                              | `reports/redscript_conflicts.md`           |
+| `--out-html <file>`                  | HTML output path                                                                  | `reports/redscript_conflicts.html`         |
 
 **Examples:**
 ```bash
@@ -217,26 +217,26 @@ REDscript-Conflict-Reporter features intelligent heuristic analysis for automati
 
 ### Severity Classifications
 
-| Level | Description | Threshold |
-|-------|-------------|-----------|
-| **Critical** | High probability core system damage | ≥95 points |
-| **High** | Noticeable bugs likely | ≥70 points |
-| **Medium** | Limited/conditional issues possible | ≥45 points |
-| **Low** | Minor or cosmetic-level risks | <45 points |
+| Level              | Description                             | Threshold      |
+|--------------------|-----------------------------------------|----------------|
+| **Critical**       | High probability core system damage    | ≥95 points     |
+| **High**           | Noticeable bugs likely                 | ≥70 points     |
+| **Medium**         | Limited/conditional issues possible    | ≥45 points     |
+| **Low**            | Minor or cosmetic-level risks          | <45 points     |
 
 ### Symptom Categories
 
 Conflicts are automatically classified by impact domain:
 
-| Code | Impact Area | Description |
-|------|-------------|-------------|
-| `uiHud` | UI/HUD | Display inconsistencies, HUD flickering |
-| `player` | Player | Stats, equipment, player behavior side effects |
-| `vehicle` | Vehicle | Vehicle handling and behavior impacts |
-| `quest` | Quest | Quest progression, flags, journal state risks |
-| `inventory` | Inventory | Item management, inventory inconsistencies |
-| `damage` | Combat | Damage calculation, combat balance variations |
-| `generic` | General | Other general instability factors |
+| Code           | Impact Area    | Description                                        |
+|----------------|----------------|----------------------------------------------------|
+| `uiHud`        | UI/HUD         | Display inconsistencies, HUD flickering           |
+| `player`       | Player         | Stats, equipment, player behavior side effects    |
+| `vehicle`      | Vehicle        | Vehicle handling and behavior impacts             |
+| `quest`        | Quest          | Quest progression, flags, journal state risks     |
+| `inventory`    | Inventory      | Item management, inventory inconsistencies        |
+| `damage`       | Combat         | Damage calculation, combat balance variations     |
+| `generic`      | General        | Other general instability factors                 |
 
 ### Assessment Factors
 
