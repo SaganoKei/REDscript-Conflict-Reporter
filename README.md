@@ -105,7 +105,3 @@ The repository includes custom SVG banner assets in `assets/branding/`:
 Banner adapted from REDscript Conflict Reporter (MIT Licensed)
 Not affiliated with or endorsed by CD PROJEKT RED.
 ```
-
----
-
-*REDscript-Conflict-Reporter is developed to improve the stability of the Cyberpunk 2077 MOD community.*
